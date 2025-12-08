@@ -1,3 +1,4 @@
+package model;
 public class Transaction {
 
     private float amount;
@@ -57,7 +58,7 @@ public class Transaction {
     public void printDetail(){
         System.out.println(
             "======Trasaction information======"+
-            "\nAmount: "+getAmount()+
+            "\nAmount: "+Utilities.convertFormat(getAmount())+
             "\nDescription: "+getDescription()+
             "\nDate: "+getDate()+
             "\ntype: "+getType()
